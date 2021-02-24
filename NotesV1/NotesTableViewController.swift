@@ -57,9 +57,7 @@ class NotesTableViewController: UITableViewController, EditNoteDelegate {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotesCell", for: indexPath)
-
         cell.textLabel?.text = self.notes[indexPath.row]["title"]
-
         return cell
     }
     
